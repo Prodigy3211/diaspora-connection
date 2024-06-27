@@ -1,0 +1,46 @@
+.logo img{
+    border: solid red 2px;
+    margin: 15px 25px;
+    max-width: 75px ;
+}
+
+.images{
+    border: solid green 2px;
+    text-align: center;
+}
+
+.pageContainer{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 150px;
+}
+
+.intro{
+    font-size: large;
+}
+
+.aboutText{
+    border: solid hotpink 2px;
+    text-align: justify;
+    padding: 8px 550px;
+    /* background-color: blue; */
+    font-size: x-large;
+}
+
+.homePageImageContainer{
+    display: flex;
+    /* flex-flow: wrap row; */
+    justify-content: space-evenly;
+    /* border: solid hotpink 2px; */
+    padding-right: 950px;
+    
+}
+
+.homePageImages{
+    display: flex;
+    /* align-items: center; */
+    width: 250px;
+    height: 250px;
+    gap: 8px;
+}
