@@ -1,61 +1,161 @@
-.logo img{
-    border: solid red 2px;
-    margin: 15px 25px;
-    max-width: 75px ;
-}
-
-
-.profileImages{
-    /* border: solid green 2px; */
-    text-align: center;
+*{
+    background-color: rgb(13, 37, 68);
+    padding: 0;
+    margin: 0;
+    /* color: gold; */
 }
 
 .pageContainer{
-    /* display: flex;
-    flex-flow: column wrap; */
-    text-align: center;
-    flex: 1;
-    /* padding: 150px; */
-    background-color: rgb(13, 37, 68);
-    color: white;
-}
-.pageContainer ol{
-    list-style-position: inside;
-    text-align: left;
-    background-color: rgb(214, 198, 50);
-    color: black;
-    font-size: x-large;
+    display: grid;
+    grid-template-areas: 
+    'logo logo logo'
+    'header header header'
+    'navigation navigation navigation'
+    'main main main'
+    'image1 image2 image3';
+    gap: 8px;
+    /* padding: 20px; */
+    /* border: 2px solid orange; */
+    /* align-content: center; */
+    margin: auto;
 }
 
-.intro{
-    font-size: large;
-    padding-left: 250px;
-    padding-right: 250px;
+.pageContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.navigation{
+    grid-area: navigation;
+    /* border: solid white 2px; */
+    font-size: larger;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+
+.navigation a{
+    /* background-color: rgb(156, 154, 2); */
+    padding: 8px;
+    margin-bottom: 8px;
+    color: gold;
+}
+
+.logo{
+    grid-area: logo;
+    justify-self: center;
+    /* padding: 75px; */
+    /* border: solid 2px hotpink; */
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    max-width: 100%;
+    max-height:  auto;
+    border-radius: 5px;
+}
+
+.header{
+    /* border: solid greenyellow 2px; */
+    grid-area: header;
+    color: gold;
+    margin-bottom: 2rem;
+}
+
+.header blockquote{
+    font-size: larger;
+    text-align: center;
+}
+
+
+
+.main{
+    /* border: red solid 2px; */
+    grid-area: main;
+    display: grid;
+    color: azure;
+    text-align: center;
+    font-size: x-large;
+    margin: 15px 350px;
+    
+}
+
+.image1{
+    /* border: solid 2px aqua; */
+    grid-area: image1;
+}
+
+.image2{
+    /* border: solid 2px yellow; */
+    grid-area: image2;
+    
+}
+
+.image3{
+    /* border:  solid salmon 2px; */
+    grid-area: image3;
+}
+
+.image4{
+    /* border: lightslategrey solid 2px; */
+    grid-area: image4;
+}
+
+.profileImages{
+    text-align: center;
+    margin-top: 8px;
 }
 
 .aboutText{
-    /* border: solid hotpink 2px; */
+    margin: 15px 500px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(93, 163, 175);
     text-align: justify;
-    padding: 8px 550px;
-    /* background-color: blue; */
-    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.homePageImageContainer{
-    /* display: flex; */
-    /* flex-flow: wrap row; */
-    /* justify-content: space-evenly; */
-    /* border: solid hotpink 2px; */
-    /* padding-right: 500px 450px; */
-    background-color: rgb(214, 198, 50);
-    /* align-items: center;
-    gap: 5px;
-    flex-wrap: wrap; */
+.aboutText p{
+    background-color: rgb(26, 24, 24);
+    padding: 20px;
 }
 
-.homePageImages{
-    /* display: flex; */
-    /* align-items: center; */
-    padding: 25px;
-    /* justify-content: space-evenly; */
+.missionHeader{
+    text-align: center;
+    /* border: solid pink 2px; */
+    color: gold;
+    margin-bottom: 25px;
+}
+
+.missionText{
+    /* text-align: left; */
+    margin: 25px 150px;
+    /* border: solid pink 2px; */
+    /* background-color: aliceblue; */
+    color: aliceblue;
+    font-size: large;
+    text-align: justify;
+}
+
+.missionText h2{
+    text-align: center;
+    margin-bottom: 16px;
+    color: aliceblue;
+}
+
+.missionText ol{
+    list-style-position: inside;
+    margin-left: 350px ;
+}
+
+.contactHeader{
+    text-align: center;
+    color: gold;
+}
+
+.contactHeaderForm{
+    border: solid gold 2px;
+    margin: 150px 350px;
+    text-align: center;
+    padding: 80px 80px;
+    /* background-color: rgb(44, 47, 49); */
 }
